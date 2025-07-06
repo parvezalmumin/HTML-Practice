@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms in HTML</title>
+</head>
+<body>
+
+  <h2>Forms in HTML</h2>
+
+  <form>
+
+    <!-- Name -->
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <!-- Phone -->
+    <label for="phone">Phone:</label><br>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    <!-- Gender -->
+    <label for="gender">Gender:</label><br>
+    <select id="gender" name="gender">
+      <option value="" disabled selected>Choose your gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <!-- Subscription Form (Radio: Only one allowed) -->
+    <label>Subscription Plan:</label><br>
+    <input type="radio" id="basic" name="subscription" value="basic">
+    <label for="basic">Basic</label><br>
+
+    <input type="radio" id="premium" name="subscription" value="premium">
+    <label for="premium">Premium</label><br>
+
+    <input type="radio" id="vip" name="subscription" value="vip">
+    <label for="vip">VIP</label><br><br>
+
+    <!-- Policies Agreement -->
+    <input type="checkbox" id="agree" name="agree">
+    <label for="agree">I agree with the policies</label><br><br>
+
+    <!-- Comments -->
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
