@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forms in HTML</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #FFD700; /* Pure yellow */
+      margin-bottom: 30px;
+    }
+
+    form {
+      background-color: #111;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px #FFD700;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #FFD700;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border: 2px solid #FFD700;
+      border-radius: 5px;
+      background-color: #222;
+      color: #fff;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #FFD700;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #ffc800;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Forms in HTML</h2>
+
+  <form>
+
+    <!-- Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <!-- Phone -->
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+
+    <!-- Gender -->
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="" disabled selected>Choose your gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <!-- Subscription Form -->
+    <label>Subscription Plan:</label>
+    <input type="radio" id="basic" name="subscription" value="basic">
+    <label for="basic">Basic</label><br>
+
+    <input type="radio" id="premium" name="subscription" value="premium">
+    <label for="premium">Premium</label><br>
+
+    <input type="radio" id="vip" name="subscription" value="vip">
+    <label for="vip">VIP</label><br><br>
+
+    <!-- Policies Agreement -->
+    <input type="checkbox" id="agree" name="agree">
+    <label for="agree">I agree with the policies</label><br><br>
+
+    <!-- Comments -->
+    <label for="comments">Comments:</label>
+    <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
