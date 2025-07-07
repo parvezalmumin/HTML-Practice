@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML Table Example</title>
+</head>
+<body>
+
+  <!-- Start of the table -->
+  <table border="1"> <!-- Adds border for visibility -->
+
+    <!-- Table caption shown above the table -->
+    <caption><strong>Student Marks Report</strong></caption>
+
+    <!-- Table Head: Column titles -->
+    <thead>
+      <tr>
+        <th>Roll</th>      <!-- Table header cell -->
+        <th>Name</th>
+        <th>Math</th>
+        <th>Science</th>
+        <th>English</th>
+      </tr>
+    </thead>
+
+    <!-- Table Body: Main data section -->
+    <tbody>
+      <!-- Row 1 -->
+      <tr>
+        <td>101</td>       <!-- Regular data cell -->
+        <td>Alice</td>
+        <td>90</td>
+        <td>85</td>
+        <td>88</td>
+      </tr>
+
+      <!-- Row 2 -->
+      <tr>
+        <td>102</td>
+        <td>Bob</td>
+        <td>78</td>
+        <td>82</td>
+        <td>80</td>
+      </tr>
+
+      <!-- Row 3 with colspan: student left two subjects blank -->
+      <tr>
+        <td>103</td>
+        <td>Charlie</td>
+        <td colspan="3">Absent in all subjects</td> <!-- Merge 3 subject columns -->
+      </tr>
+    </tbody>
+
+    <!-- Table Footer: Summary or Total -->
+    <tfoot>
+      <tr>
+        <td colspan="2"><strong>Average Marks</strong></td> <!-- Merge Roll & Name -->
+        <td>84</td>
+        <td>83.5</td>
+        <td>84</td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+</body>
+</html>
