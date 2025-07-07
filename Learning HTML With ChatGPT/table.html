@@ -1,0 +1,48 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML Table Example</title>
+</head>
+<body>
+
+  <!-- Start of the table, with a border of 1px -->
+  <table border="1">
+    
+    <!-- First row: header row with 3 columns -->
+    <tr>
+      <th>Name</th>       <!-- Table header cell -->
+      <th>Age</th>
+      <th>Country</th>
+    </tr>
+
+    <!-- Second row: regular data row -->
+    <tr>
+      <td>Alice</td>      <!-- Table data cell -->
+      <td>25</td>
+      <td>USA</td>
+    </tr>
+
+    <!-- Third row: using colspan to merge two columns -->
+    <tr>
+      <td colspan="2">Bob (merged Name & Age)</td> <!-- Merges Name and Age -->
+      <td>Canada</td>
+    </tr>
+
+    <!-- Fourth row: using rowspan to span 2 rows -->
+    <tr>
+      <td rowspan="2">Charlie</td>  <!-- This cell will stretch down to the next row -->
+      <td>30</td>
+      <td>UK</td>
+    </tr>
+
+    <!-- Fifth row: part of the rowspan above -->
+    <tr>
+      <!-- No <td> here for Name, because Charlie's name is spanning this row -->
+      <td>31</td>
+      <td>Australia</td>
+    </tr>
+
+  </table>
+
+</body>
+</html>
